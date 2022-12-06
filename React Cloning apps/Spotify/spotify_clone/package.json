@@ -8,12 +8,13 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "babel-preset-es2015": "^6.24.1",
     "file-loader": "^6.2.0",
+    "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "^2.1.3",
     "spotify-web-api-js": "^1.5.2",
+    "storybook": "^6.5.14",
     "url-loader": "^4.1.1",
     "web-vitals": "^2.1.4"
   },
@@ -40,5 +41,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "css-loader": "^6.7.2",
+    "jsx-loader": "^0.13.2",
+    "ts-loader": "^9.4.2"
   }
 }

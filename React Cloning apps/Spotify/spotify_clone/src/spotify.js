@@ -1,7 +1,7 @@
 //authEndpoint - authenticate url in spotify.
 export const authEndpoint = "https://accounts.spotify.com/authorize";
 // redirectUri is the uri that we provided to spotify api (our localhost)
-const redirectUri = "https://localhost:3001/";
+const redirectUri = "https://cloning-musicspotify.web.app";
 //clientId - spotify provided clientId in api
 const clientId = "1991a30dc6e9473a969cedcd612c0da9";
 

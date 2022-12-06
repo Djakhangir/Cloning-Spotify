@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.css";
 import { Search } from "@material-ui/icons";
 import { Avatar } from "@material-ui/core";
-import { useDataLayerValue } from "./DataLayer";
+import { useDataLayerValue } from "../../State/DataLayer";
 
 const Header = () => {
   const [{ user }, dispatch] = useDataLayerValue();
@@ -16,8 +16,8 @@ const Header = () => {
         />
       </div>
       <div className="header__right">
-        <Avatar src={user?.images[0]?.url} alt={user?.display_name} />
-        <h4>{user?.display_name}</h4>
+        <Avatar src={user && user.images[0] ? user.images[0].url : null} alt={user? user.display_name : "User Avatar"} />
+        <h4>{user? user.display_name : null}</h4>
       </div>
     </div>
   );

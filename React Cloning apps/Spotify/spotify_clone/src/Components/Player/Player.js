@@ -4,8 +4,8 @@ import Body from "../Body/Body.js";
 import Footer from "../Footer/Footer.js";
 import SideBar from "../SideBar/SideBar.js";
 
-
 const Player = ({spotify}) => {
+  console.log(spotify);
   return (
     <div className="player">
       <div className="player__body">
